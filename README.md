@@ -46,6 +46,9 @@ export default sample;
 |240901|HeaderとFooter||
 |240901|Main||
 
+## Vercel:デプロイ
+https://next14-design-tailwind.vercel.app/
+
 ## 参考
 - [チートシート](https://nerdcave.com/tailwind-cheat-sheet)
 - [tailblocks: フレーム系](https://tailblocks.cc/)
