@@ -24,7 +24,7 @@ export default function Footer(){
         <div className={`${twStyles.footer01Left}`}>
           <div className={`${twStyles.footer01LeftTitle}`}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-            <span className="ml-3 text-xl">Dasign by tailwing</span>
+            <span className="ml-3 text-xl">Dasign by tailwind</span>
           </div>
           <div className={`${twStyles.footer01Leftsub}`}>
             <p className="mt-2 text-sm text-gray-500">This is a collection of design templates based on tailwind.</p>
