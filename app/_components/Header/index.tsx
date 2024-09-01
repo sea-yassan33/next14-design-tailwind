@@ -15,7 +15,7 @@ export default function Header(){
     <header className={`${twStyles.headerTop}`}>
       <div className={`${twStyles.header01}`}>
         <div className={`${twStyles.header01Right}`}>
-          <Link href={'/'} className="text-3xl">Design by tailwing</Link>
+          <Link href={'/'} className="text-3xl">Design by tailwind</Link>
           <Link href="https://next12-design.vercel.app/" className={`${twStyles.header01titleSub} mx-5`}>→by BootStrap</Link>
         </div>
         <div className={`${twStyles.header01Left}`}>
