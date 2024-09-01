@@ -44,6 +44,7 @@ export default sample;
 |date|content|Link|
 |:----|:----|:----|
 |240901|HeaderとFooter||
+|240901|Main||
 
 ## 参考
 - [チートシート](https://nerdcave.com/tailwind-cheat-sheet)
