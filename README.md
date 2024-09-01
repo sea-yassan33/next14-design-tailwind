@@ -53,3 +53,7 @@ export default sample;
 - [icones：アイコン](https://icones.js.org/)
 - [Preline：UI](https://preline.co/)
 - [Pines：UIパーツ](https://devdojo.com/pines)
+- [文字デザイン01](https://focaccia.co.jp/blog/css-gradient-text)
+- [グラデーション](https://tailwind-gradient-generator.vercel.app/)
+- [flowrift:テンプレ](https://flowrift.com/w/)
+- [tailwing入門ドキュメント](https://zenn.dev/yohei_watanabe/books/c0b573713734b9)
