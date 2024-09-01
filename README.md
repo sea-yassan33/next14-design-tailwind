@@ -28,7 +28,7 @@ http://localhost:3000/
 
 ## Vscode補完機能
 nafeで補完
-```
+```tsx
 const sample = () => {
     return (
         <div>
@@ -39,3 +39,16 @@ const sample = () => {
 
 export default sample;
 ```
+
+## 履歴
+|date|content|Link|
+|:----|:----|:----|
+|240901|HeaderとFooter||
+
+## 参考
+- [チートシート](https://nerdcave.com/tailwind-cheat-sheet)
+- [tailblocks: フレーム系](https://tailblocks.cc/)
+- [ailwindtemplates: パーツ系](https://tailwindtemplates.io/templates)
+- [icones：アイコン](https://icones.js.org/)
+- [Preline：UI](https://preline.co/)
+- [Pines：UIパーツ](https://devdojo.com/pines)
