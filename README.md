@@ -22,6 +22,9 @@ npm install @headlessui/react
 
 - Heroicons
 npm install @heroicons/react
+
+- Tailwind Variants
+npm install tailwind-variants
 ```
 
 ## Next.jsの開発モードでサーバーを起動
@@ -54,6 +57,34 @@ export default sample;
 
 ## Vercel:デプロイ
 https://next14-design-tailwind.vercel.app/
+
+## Tailwind Variantsの使い方
+```js
+import { tv } from 'tailwind-variants';
+const button = tv({
+  base: 'text-white p-4',
+  variants: {
+    color: {
+      primary: 'bg-blue-500',
+      secondary: 'bg-red-500',
+    },
+  },
+});
+button({ color: 'primary' })
+// => "text-white p-4 bg-blue-500"
+
+button({ color: 'secondary' })
+// => "text-white p-4 bg-red-500"
+```
+
+- settings.jsonの設定
+```json
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ]
+}
+```
 
 ## 参考
 - [チートシート](https://nerdcave.com/tailwind-cheat-sheet)

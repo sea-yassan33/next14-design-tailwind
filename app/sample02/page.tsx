@@ -1,34 +1,42 @@
 import React from "react"
 import Image from "next/image"
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { tv } from 'tailwind-variants';
 
 const twStyles = {
-  
+  container01: "container px-5 py-5 mx-auto",
+  container02: "flex flex-wrap -m-4",
+  split:"lg:w-1/4 md:w-1/2 p-4 w-full",
 }
 
-export default function Sample02(){
+const tvButton = tv({
+  base: 'py-1.5 px-4 transition-colors border font-medium rounded-lg disabled:opacity-50 m-1',
+  variants: {
+    color: {
+      black: 'bg-gray-50 active:bg-gray-200 border-gray-200 text-gray-900 hover:bg-gray-100',
+      green: 'bg-green-600 active:bg-green-800 border-green-700 text-white hover:bg-green-700',
+      blue: 'bg-gray-50 active:bg-blue-800 border-gray-200 hover:text-white text-blue-600 hover:border-blue-700 hover:bg-blue-600',
+      red:'bg-gray-50 active:bg-red-800 border-gray-200 hover:text-white text-red-600 hover:border-red-700 hover:bg-red-600',
+    },
+  },
+});
+
+export default function Sample03(){
   return(
-    <Menu>
-  <MenuButton className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
-    My account
-  </MenuButton>
-  <MenuItems className="mt-2 w-48 bg-white shadow-lg rounded-md py-1 border border-gray-200" anchor="bottom">
-    <MenuItem>
-      <a className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-gray-900 focus:bg-blue-100 focus:outline-none" href="/settings">
-        Settings
-      </a>
-    </MenuItem>
-    <MenuItem>
-      <a className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-gray-900 focus:bg-blue-100 focus:outline-none" href="/support">
-        Support
-      </a>
-    </MenuItem>
-    <MenuItem>
-      <a className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-gray-900 focus:bg-blue-100 focus:outline-none" href="/license">
-        License
-      </a>
-    </MenuItem>
-  </MenuItems>
-</Menu>
+    <section className={`${twStyles.container01}`}>
+      <div className={`${twStyles.container02}`}>
+        <div className={`${twStyles.split}`}>
+          <p>ボタン・サンプル</p>
+          <div className="p-2">
+            <button className={`${tvButton({color:'black'})}`}>ボタン1</button>
+            <button className={`${tvButton({color:'green'})}`}>ボタン2</button>
+            <button className={`${tvButton({color:'blue'})}`}>ボタン3</button>
+            <button className={`${tvButton({color:'red'})}`}>ボタン4</button>
+          </div>
+        </div>
+        <div className={`${twStyles.split}`}>
+          <p className="mb-2">サンプル２</p>
+        </div>
+      </div>
+    </section>
   )
 }

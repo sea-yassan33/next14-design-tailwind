@@ -35,12 +35,14 @@ export default function Home() {
           </div>
           <div className={`${twStayles.mainItem01}`}>
             <div className={`${twStayles.mainItem02}`}>
-              <Image className={`${twStayles.mainItemImg}`} src="/preparatImg.png" alt="" width={4000} height={1200}/>
+              <Link href='/sample02'>
+                <Image className={`${twStayles.mainItemImg}`} src="/preparatImg.png" alt="" width={4000} height={1200}/>
+              </Link>
               <div className="p-6">
                 <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
-                <h1 className={`${twStayles.mainItemTxtH1}`}>TITLE</h1>
+                <Link href='/sample02' className={`${twStayles.mainItemTxtH1}`}>sample02</Link>
                 <p className={`${twStayles.mainItemTxt}`}>
-                  Photo booth fam kinfolk 
+                  アイテムのデザインサンプル。
                 </p>
               </div>
             </div>
