@@ -16,6 +16,12 @@ Ok to proceed? (y) y
 npm install classnames
 npm install dayjs@1.11.10
 npm install nextjs-basic-auth-middleware@3.1.0
+
+- Headless UI
+npm install @headlessui/react
+
+- Heroicons
+npm install @heroicons/react
 ```
 
 ## Next.jsの開発モードでサーバーを起動

@@ -21,12 +21,14 @@ export default function Home() {
           {/* ループ予定 */}
           <div className={`${twStayles.mainItem01}`}>
             <div className={`${twStayles.mainItem02}`}>
-              <Image className={`${twStayles.mainItemImg}`} src="/preparatImg.png" alt="" width={4000} height={1200}/>
+              <Link href='/sample01'>
+                <Image className={`${twStayles.mainItemImg}`} src="https://i.gyazo.com/f8bf59f059fe478e8ff969dc2cbaf0b9.png" alt="" width={4000} height={1200}/>
+              </Link>
               <div className="p-6">
                 <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
-                <h1 className={`${twStayles.mainItemTxtH1}`}>TITLE</h1>
+                <Link href='/sample01' className={`${twStayles.mainItemTxtH1}`}>sample01</Link>
                 <p className={`${twStayles.mainItemTxt}`}>
-                  Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                  画像、youtube動画の一覧を表示するデザイン。
                 </p>
               </div>
             </div>
@@ -38,7 +40,7 @@ export default function Home() {
                 <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
                 <h1 className={`${twStayles.mainItemTxtH1}`}>TITLE</h1>
                 <p className={`${twStayles.mainItemTxt}`}>
-                  Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                  Photo booth fam kinfolk 
                 </p>
               </div>
             </div>
@@ -50,7 +52,7 @@ export default function Home() {
                 <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
                 <h1 className={`${twStayles.mainItemTxtH1}`}>TITLE</h1>
                 <p className={`${twStayles.mainItemTxt}`}>
-                  Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                  Photo booth fam kinfol
                 </p>
               </div>
             </div>

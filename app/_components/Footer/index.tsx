@@ -60,6 +60,12 @@ export default function Footer(){
               <li className="mb-3">
                 <Link href="https://devdojo.com/pines/docs/accordion" target="_blank">UIパーツ（Pines）</Link>
               </li>
+              <li className="mb-3">
+                <Link href="https://heroicons.com/" target="_blank">アイコン（Hero）</Link>
+              </li>
+              <li className="mb-3">
+                <Link href="https://headlessui.com/" target="_blank">ヘッドレスUI</Link>
+              </li>
             </nav>
           </div>
         </div>
