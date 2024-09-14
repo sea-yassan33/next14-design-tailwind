@@ -1,0 +1,18 @@
+[
+    {
+        "title": "sample02",
+        "description": "アイテムのデザインサンプル。",
+        "link": "/sample02",
+        "imageUrl": "https://i.gyazo.com/505fc3f175597de655ce21fb4d66bf2c.png",
+        "createDate": "24/09/07",
+        "updateDate": "24/09/07"
+    },
+    {
+        "title": "sample01",
+        "description": "画像、youtube動画の一覧を表示するデザイン。",
+        "link": "/sample01",
+        "imageUrl": "https://i.gyazo.com/f8bf59f059fe478e8ff969dc2cbaf0b9.png",
+        "createDate": "24/09/01",
+        "updateDate": "24/09/01"
+    }
+]

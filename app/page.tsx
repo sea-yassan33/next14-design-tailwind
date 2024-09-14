@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Colllection from "./_components/Collection";
 
 const twStayles = {
   //main
@@ -18,47 +19,8 @@ export default function Home() {
       <div className="container px-5 py-10 mx-auto">
         <h1 className={`${twStayles.mainTitle} mb-5`}>テンプレート集</h1>
         <div className="flex flex-wrap -m-4">
-          {/* ループ予定 */}
-          <div className={`${twStayles.mainItem01}`}>
-            <div className={`${twStayles.mainItem02}`}>
-              <Link href='/sample01'>
-                <Image className={`${twStayles.mainItemImg}`} src="https://i.gyazo.com/f8bf59f059fe478e8ff969dc2cbaf0b9.png" alt="" width={4000} height={1200}/>
-              </Link>
-              <div className="p-6">
-                <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
-                <Link href='/sample01' className={`${twStayles.mainItemTxtH1}`}>sample01</Link>
-                <p className={`${twStayles.mainItemTxt}`}>
-                  画像、youtube動画の一覧を表示するデザイン。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className={`${twStayles.mainItem01}`}>
-            <div className={`${twStayles.mainItem02}`}>
-              <Link href='/sample02'>
-                <Image className={`${twStayles.mainItemImg}`} src="https://i.gyazo.com/505fc3f175597de655ce21fb4d66bf2c.png" alt="" width={4000} height={1200}/>
-              </Link>
-              <div className="p-6">
-                <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
-                <Link href='/sample02' className={`${twStayles.mainItemTxtH1}`}>sample02</Link>
-                <p className={`${twStayles.mainItemTxt}`}>
-                  アイテムのデザインサンプル。
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className={`${twStayles.mainItem01}`}>
-            <div className={`${twStayles.mainItem02}`}>
-              <Image className={`${twStayles.mainItemImg}`} src="/preparatImg.png" alt="" width={4000} height={1200}/>
-              <div className="p-6">
-                <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
-                <h1 className={`${twStayles.mainItemTxtH1}`}>TITLE</h1>
-                <p className={`${twStayles.mainItemTxt}`}>
-                  Photo booth fam kinfol
-                </p>
-              </div>
-            </div>
-          </div>
+          {/* テンプレート集 */}
+          <Colllection/>
         </div>
       </div>
     </section>
