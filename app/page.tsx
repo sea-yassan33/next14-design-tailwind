@@ -36,7 +36,7 @@ export default function Home() {
           <div className={`${twStayles.mainItem01}`}>
             <div className={`${twStayles.mainItem02}`}>
               <Link href='/sample02'>
-                <Image className={`${twStayles.mainItemImg}`} src="/preparatImg.png" alt="" width={4000} height={1200}/>
+                <Image className={`${twStayles.mainItemImg}`} src="https://i.gyazo.com/505fc3f175597de655ce21fb4d66bf2c.png" alt="" width={4000} height={1200}/>
               </Link>
               <div className="p-6">
                 <h2 className={`${twStayles.mainItemTxtH2}`}>CATEGORY</h2>
