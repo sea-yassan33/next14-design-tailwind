@@ -25,6 +25,9 @@ npm install @heroicons/react
 
 - Tailwind Variants
 npm install tailwind-variants
+
+- Lucide
+npm install lucide
 ```
 
 ## Next.jsの開発モードでサーバーを起動
@@ -97,3 +100,4 @@ button({ color: 'secondary' })
 - [グラデーション](https://tailwind-gradient-generator.vercel.app/)
 - [flowrift:テンプレ](https://flowrift.com/w/)
 - [tailwing入門ドキュメント](https://zenn.dev/yohei_watanabe/books/c0b573713734b9)
+- [Lucide-アイコン](https://lucide.dev/icons/)

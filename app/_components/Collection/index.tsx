@@ -1,8 +1,7 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense } from 'react';
-import { useState, useEffect } from "react";
+import fs from 'fs';
+import path from "path";
 
 interface Item{
   link: string;
@@ -22,21 +21,15 @@ function CollectList(){
     mainItemTxt:"leading-relaxed mb-3",
     mainTitle:"text-5xl font-bold tracking-widest bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent",
   }
-
-  // 状態管理
-  const [items, setItems] = useState<Item[]>([]);
-
-  // JSONデータを取得して設定
-  useEffect(() => {
-    fetch('/data/colect.json')
-    .then(response => response.json())
-    .then(data => setItems(data))
-    .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  // JSONファイルのパスを設定
+  const filePath = path.join(process.cwd(), '/public/data/colect.json');
+  const jsonData = fs.readFileSync(filePath, 'utf-8');
+  // JSONデータをパース
+  const itemData: Item[] = JSON.parse(jsonData);
 
   return(
     <>
-      {items.map((item, index) => (
+      {itemData.map((item, index) => (
         <div className={`${twStayles.mainItem01}`} key={index}>
           <div className={`${twStayles.mainItem02}`}>
             <Link href={item.link}>
@@ -56,9 +49,7 @@ function CollectList(){
 export default function Colllection(){
   return(
     <>
-      <Suspense>
-        <CollectList />
-      </Suspense>
+      <CollectList />
     </>
   );
 }
