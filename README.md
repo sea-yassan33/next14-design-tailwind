@@ -26,8 +26,8 @@ npm install @heroicons/react
 - Tailwind Variants
 npm install tailwind-variants
 
-- Lucide
-npm install lucide
+- svgr
+npm install @svgr/webpack
 ```
 
 ## Next.jsの開発モードでサーバーを起動

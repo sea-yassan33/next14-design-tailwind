@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { tv } from 'tailwind-variants';
+import GitIcon from '../../public/icons/github.svg'
 
 const tvContaner = tv({
   variants:{
@@ -31,6 +32,7 @@ export default function Sample05(){
         </section>
 
         <section className="mb-8">
+          <div><GitIcon/></div>
           <h3 className="text-2xl font-semibold mb-4 border-b border-gray-300 pb-2">Summary</h3>
           <p className="text-justify">
             Experienced Full Stack Developer with a strong background in building scalable web applications. 
