@@ -1,5 +1,13 @@
 [
     {
+        "title": "sample06",
+        "description": "完了画面",
+        "link": "/sample06",
+        "imageUrl": "/preparatImg.png",
+        "createDate": "24/10/14",
+        "updateDate": "24/10/14"
+    },
+    {
         "title": "sample05",
         "description": "論文式のデザイン",
         "link": "/sample05",

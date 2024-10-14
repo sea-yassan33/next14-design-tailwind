@@ -1,6 +1,6 @@
 ## 開発環境
-```
-create-next-app@14.1.4
+```sh
+npx create-next-app@14.1.4
 Ok to proceed? (y) y
 ✔ What is your project named? … nextjs14-design-tailwind
 ✔ Would you like to use TypeScript? …  / Yes
@@ -86,6 +86,27 @@ button({ color: 'secondary' })
   "tailwindCSS.experimental.classRegex": [
     ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ]
+}
+```
+
+- テンプレート
+```js
+import Image from "next/image"
+import { tv } from 'tailwind-variants';
+
+const tvContaner = tv({
+  variants:{
+    style:{
+      cont1: '',
+    },
+  },
+});
+
+export default function Sample00(){
+  return(
+    <section>
+    </section>
+  );
 }
 ```
 
