@@ -51,7 +51,7 @@ export default function Sample06(){
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          <p className="text-xl mb-6 text-gray-700">Your inquiry has been successfully submitted!</p>
+          <p className="text-xl mb-6 text-gray-700">お問い合わせは正常に送信されました。</p>
         </motion.div>
 
         {showMessage && (
@@ -61,7 +61,7 @@ export default function Sample06(){
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mb-6"
           >
-            <p className="text-lg text-pink-500">We'll get back to you super soon!</p>
+            <p className="text-lg text-pink-500">お問合せありがとうございます</p>
           </motion.div>
         )}
 
