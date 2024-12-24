@@ -16,7 +16,6 @@ export default function Header(){
       <div className={`${twStyles.header01}`}>
         <div className={`${twStyles.header01Right}`}>
           <Link href={'/'} className="text-3xl">Design by tailwind</Link>
-          <Link href="https://next12-design.vercel.app/" className={`${twStyles.header01titleSub} mx-5`}>→by BootStrap</Link>
         </div>
         <div className={`${twStyles.header01Left}`}>
           <Link href="https://tailblocks.cc/" className="mr-5 hover:text-gray-900" target="_blank">tailblocks</Link>

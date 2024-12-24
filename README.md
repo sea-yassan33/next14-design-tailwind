@@ -11,73 +11,37 @@ Ok to proceed? (y) y
 ✔ Would you like to customize the default import alias (@/*)? … No / 
 ```
 
-## 追加ライブラリ
-```
-npm install classnames
-npm install dayjs@1.11.10
-npm install nextjs-basic-auth-middleware@3.1.0
-
-- Headless UI
-npm install @headlessui/react
-
-- Heroicons
-npm install @heroicons/react
-
-- Tailwind Variants
-npm install tailwind-variants
-
-- svgr
-npm install @svgr/webpack
-```
-
-## Next.jsの開発モードでサーバーを起動
-```
-npm run dev
-
-- ローカルサーバー
-http://localhost:3000/
-```
-
-## Vscode補完機能
-nafeで補完
-```tsx
-const sample = () => {
-    return (
-        <div>
-            Enter
-        </div>
-    );
-}
-
-export default sample;
-```
-
 ## 履歴
 |date|content|Link|
 |:----|:----|:----|
 |240901|HeaderとFooter||
 |240901|Main||
 
-## Vercel:デプロイ
-https://next14-design-tailwind.vercel.app/
+## 追加ライブラリ
+```sh
+npm install classnames
+npm install dayjs@1.11.10
+npm install nextjs-basic-auth-middleware@3.1.0
 
-## Tailwind Variantsの使い方
-```js
-import { tv } from 'tailwind-variants';
-const button = tv({
-  base: 'text-white p-4',
-  variants: {
-    color: {
-      primary: 'bg-blue-500',
-      secondary: 'bg-red-500',
-    },
-  },
-});
-button({ color: 'primary' })
-// => "text-white p-4 bg-blue-500"
+## Tailwind Variants
+npm install tailwind-variants
 
-button({ color: 'secondary' })
-// => "text-white p-4 bg-red-500"
+## ui.shadcn
+npx shadcn@latest init -d
+npx shadcn@latest add
+
+## ブラウザ依存のライブラリ
+npm install framer-motion
+
+## Headless UI
+npm install @headlessui/react
+
+## reacticons
+## https://react-icons.github.io/react-icons/
+npm install react-icons
+
+- svgr
+npm install @svgr/webpack
 ```
 
 - settings.jsonの設定
@@ -89,26 +53,38 @@ button({ color: 'secondary' })
 }
 ```
 
-- テンプレート
+## Next.jsの開発モードでサーバーを起動
+```
+npm run dev
+
+- ローカルサーバー
+http://localhost:3000/
+```
+
+##  page開発テンプレート
 ```js
-import Image from "next/image"
+import Image from "next/image";
+import Link from 'next/link';
 import { tv } from 'tailwind-variants';
 
-const tvContaner = tv({
-  variants:{
-    style:{
-      cont1: '',
+export default function Sample00() {
+  const twStayles = tv({
+    variants: {
+      style:{
+        text01:'text-cyan-400',
+      },
     },
-  },
-});
-
-export default function Sample00(){
-  return(
-    <section>
-    </section>
+  });
+  return (
+    <div className={twStayles({style:'text01'})}>
+      first_commit
+    </div>
   );
 }
 ```
+
+## Vercel:デプロイ
+https://next14-design-tailwind.vercel.app/
 
 ## 参考
 - [チートシート](https://nerdcave.com/tailwind-cheat-sheet)
