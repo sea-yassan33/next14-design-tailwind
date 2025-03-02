@@ -9,8 +9,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 export default function Sample09() {
+  // 種目のリストを管理する
   const [exercises, setExercises] = useState([{ id: 1, name: "", sets: Array(5).fill({ weight: "", reps: "" }) }])
-
+  // 種目の選択肢
   const exerciseOptions = [
     { value: "squat", label: "スクワット" },
     { value: "leg-press", label: "レッグプレス" },
@@ -25,7 +26,7 @@ export default function Sample09() {
     { value: "calf-raise", label: "カーフレイズ" },
     { value: "abdominal-crunch", label: "アブドミナルクランチ" },
   ]
-
+  // 部位の選択
   const bodyPartOptions = [
     { value: "lower-body", label: "下半身" },
     { value: "upper-body", label: "上半身" },
@@ -36,13 +37,15 @@ export default function Sample09() {
     { value: "chest", label: "胸" },
     { value: "shoulders", label: "肩" },
   ]
-
+  // 種目の名前を更新する
   const handleExerciseChange = (index: number, field: string, value: string) => {
+    // exercisesのindex番目の要素を更新する
     const updatedExercises = [...exercises]
+    // exercises[index]のfieldの値をvalueに更新する
     updatedExercises[index] = { ...updatedExercises[index], [field]: value }
     setExercises(updatedExercises)
   }
-
+  // 1set, 2set, 3set, 4set, 5setのそれぞれのweightとrepsの値を更新する
   const handleSetChange = (exerciseIndex: number, setIndex: number, field: string, value: string) => {
     const updatedExercises = [...exercises]
     const updatedSets = [...updatedExercises[exerciseIndex].sets]
@@ -50,18 +53,18 @@ export default function Sample09() {
     updatedExercises[exerciseIndex].sets = updatedSets
     setExercises(updatedExercises)
   }
-
+  // 種目を追加する
   const addExercise = () => {
     setExercises([...exercises, { id: exercises.length + 1, name: "", sets: Array(5).fill({ weight: "", reps: "" }) }])
   }
-
+  // 種目を削除する
   const removeExercise = (index: number) => {
     if (exercises.length > 1) {
       const updatedExercises = exercises.filter((_, i) => i !== index)
       setExercises(updatedExercises)
     }
   }
-
+  // ページの表示
   return (
     <div className="max-w-4xl mx-auto p-4">
       <Card className="bg-gradient-to-r from-pink-50 to-purple-50 border-pink-200">
@@ -124,7 +127,6 @@ export default function Sample09() {
               </RadioGroup>
             </div>
           </div>
-
           <div className="mb-6">
             <div className="flex items-center space-x-2 mb-2">
               <Label htmlFor="body-part" className="text-pink-700">
@@ -144,7 +146,6 @@ export default function Sample09() {
               </Select>
             </div>
           </div>
-
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
@@ -215,7 +216,6 @@ export default function Sample09() {
               </tbody>
             </table>
           </div>
-
           <div className="mt-4 flex justify-between">
             <Button type="button" onClick={addExercise} className="bg-pink-500 hover:bg-pink-600 text-white">
               種目を追加
