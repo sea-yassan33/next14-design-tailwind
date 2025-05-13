@@ -4,6 +4,7 @@ import { Phone } from "lucide-react";
 import Hero01 from "../_components/Hero/Hero01";
 import Navi01 from "../_components/Navi/Navi01";
 import Section02 from "./Section02";
+import Section03 from "./Section03";
 
 export default function Sample11() {
   return (
@@ -32,6 +33,9 @@ export default function Sample11() {
       </section>
       <section>
         <Section02/>
+      </section>
+      <section>
+        <Section03/>
       </section>
     </div>
   );

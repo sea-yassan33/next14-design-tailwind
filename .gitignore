@@ -35,5 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+zz_in_dev
 zz_in_dev/*
-zz_in_dev/data_create.ipynb
