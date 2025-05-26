@@ -5,6 +5,8 @@ import Hero01 from "../_components/Hero/Hero01";
 import Navi01 from "../_components/Navi/Navi01";
 import Section02 from "./Section02";
 import Section03 from "./Section03";
+import Section04 from "./Section04";
+import Section05 from "./Section05";
 
 export default function Sample11() {
   return (
@@ -30,10 +32,17 @@ export default function Sample11() {
         </header>
         {/* ヒーローセクション */}
         <Hero01 />
+        <Section04/>
       </section>
+      {/* 提供サービスについて */}
       <section>
         <Section02/>
       </section>
+      {/* お知らせ */}
+      <section>
+        <Section05/>
+      </section>
+      {/* 事業所の特徴 */}
       <section>
         <Section03/>
       </section>

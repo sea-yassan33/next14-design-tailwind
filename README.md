@@ -100,3 +100,4 @@ https://next14-design-tailwind.vercel.app/
 - [tailwing入門ドキュメント](https://zenn.dev/yohei_watanabe/books/c0b573713734b9)
 - [Lucide-アイコン](https://lucide.dev/icons/)
 - [21ST](https://21st.dev/)
+- [私なりのチートシート](https://zenn.dev/aew2sbee/articles/tailwind-css-cheat-sheet)

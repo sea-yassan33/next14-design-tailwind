@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
 export default function Section03(){
