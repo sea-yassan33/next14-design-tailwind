@@ -41,8 +41,12 @@ npm install @headlessui/react
 ## https://react-icons.github.io/react-icons/
 npm install react-icons
 
-- svgr
+## svgr
 npm install @svgr/webpack
+
+## Swiper
+## https://swiperjs.com/
+npm install swiper
 ```
 
 - settings.jsonの設定
