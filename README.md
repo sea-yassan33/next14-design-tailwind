@@ -47,6 +47,13 @@ npm install @svgr/webpack
 ## Swiper
 ## https://swiperjs.com/
 npm install swiper
+
+## 日付ライブラリ
+npm install date-fns
+
+## react-big-calendarパッケージ
+## https://github.com/jquense/react-big-calendar/blob/master/stories/demos/exampleCode/backgroundEvents.js
+npm install @react-big-calendar 
 ```
 
 - settings.jsonの設定
@@ -64,7 +71,7 @@ npm run dev
 
 - ローカルサーバー
 http://localhost:3000/
-```
+```moment
 
 ##  page開発テンプレート
 ```js
