@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Colllection from "./_components/Collection";
 import { tv } from 'tailwind-variants';
+import Footer from "./_components/Footer";
 
 const twStayles = tv({
   base:'font-bold tracking-widest bg-clip-text text-transparent mb-5',
@@ -19,14 +20,17 @@ const twStayles = tv({
 
 export default function Home() {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-10 mx-auto">
-        <h1 className={twStayles({color:'s01',size:'s02'})}>テンプレート集</h1>
-        <div className="flex flex-wrap -m-4">
-          {/* テンプレート集 */}
-          <Colllection/>
+    <>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-10 mx-auto">
+          <h1 className={twStayles({color:'s01',size:'s02'})}>テンプレート集</h1>
+          <div className="flex flex-wrap -m-4">
+            {/* テンプレート集 */}
+            <Colllection/>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer/>
+    </>
   );
 }
